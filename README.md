@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/ToTheCap/interactive-rating-component](https://github.com/ToTheCap/interactive-rating-component)
+- Live Site URL: [https://vercel.com/tothecap/interactive-rating-component](https://vercel.com/tothecap/interactive-rating-component)
 
 ## My process
 
