@@ -1,0 +1,197 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+
+:root {
+  --very-dark-blue: hsl(218, 11%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --orange: hsl(25, 97%, 53%);
+  --disabled-button: hsl(213, 16%, 11%);
+  --grey: hsl(0, 0%, 50%);
+  --medium-grey: hsl(217, 12%, 54%);
+  --light-grey: hsl(216, 12%, 63%, 1);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: 'Overpass', monospace, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--very-dark-blue);
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 412px;
+  padding: 35px;
+  border-radius: 30px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+
+
+/*
+==============
+Form
+==============
+*/
+
+.circle {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+}
+
+.text-div {
+  margin: 30px 0 24px 0;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 0.25em;
+}
+
+p {
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--light-grey);
+}
+
+.scale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  width: 51px;
+  height: 51px;
+  color: var(--medium-grey);
+  cursor: pointer;
+}
+
+.rating:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.selected {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
+.submit {
+  font-size: 15px;
+  width: 100%;
+  height: 3em;
+  margin-top: 32px;
+  border: none;
+  border-radius: 22.5px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.submit:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.submit:disabled {
+  cursor: auto;
+  color: var(--grey);
+  background-color: var(--disabled-button);
+}
+
+
+
+/*
+==============
+Submitted
+==============
+*/
+
+.submitted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.result {
+  box-sizing: content-box;
+  margin: 32px 0;
+  padding: 4px 20px;
+  border-radius: 22.5px;
+  color: var(--orange);
+  background-color: var(--dark-blue);
+}
+
+.submitted p {
+  text-align: center;
+}
+
+
+@media (max-width: 1440px) {
+  .App {
+    width: 327px;
+    padding: 24px;
+    padding-bottom: 32px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text-div {
+    margin: 16px 0 24px 0;
+  }
+
+  .rating {
+    width: 42px;
+    height: 42px;
+  }
+
+  .submit {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  .submitted {
+    padding-bottom: 0;
+  }
+
+  .thank-you-icon {
+    width: 144px;
+  }
+
+  .result {
+    margin: 24px 0px;
+    padding: 5px 12px;
+  }
+}
